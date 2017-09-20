@@ -6,8 +6,8 @@ RUN \
     && apt-get -y clean && apt-get -y autoclean \
     && mkdir -p /opt/twofishes
 
-ENV TWOFISHES_VERSION="0.84.9" \
-    TWOFISHES_DATAINDEX_VERSION="2015-03-05" \
+ENV TWOFISHES_BINARY_URL="https://s3.amazonaws.com/twofishes-data/binaries/server-assembly-0.84.9.jar" \
+    TWOFISHES_DATAINDEX_URL="https://s3.amazonaws.com/twofishes-data/indexes/2015-03-05.tar.gz" \
     TWOFISHES_JAVA_OPTS="-Xmx2g -Xms2g"
 
 VOLUME /opt/twofishes
